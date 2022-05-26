@@ -14,7 +14,7 @@ networks:
   dspacenet:
 services:
   dspace-angular:
-    container_name: dspace-angular
+    container_name: dspace-angular-haui
     environment:
       DSPACE_UI_SSL: 'false'
       DSPACE_UI_HOST: dspace-angular
@@ -24,7 +24,7 @@ services:
       DSPACE_REST_HOST: localhost
       DSPACE_REST_PORT: 8080
       DSPACE_REST_NAMESPACE: /server
-    image: chituanh/dspace-angular-haui:dspace-7_x
+    image: chituanh/dspace-angular-haui:v1
     build:
       context: ..
       dockerfile: Dockerfile
